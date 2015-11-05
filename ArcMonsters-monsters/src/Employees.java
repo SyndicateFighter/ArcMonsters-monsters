@@ -21,22 +21,22 @@ public class Employees {
 
     Employees()
     {
-        new Employees("David", 25, TeamType.SDK);
+        this("David", 25, TeamType.SDK);
     }
 
     Employees(String Name)
     {
-        new Employees(Name, 25, TeamType.DESKTOP);
+        this(Name, 25, TeamType.DESKTOP);
     }
 
     Employees(String Name, long xp)
     {
-        new Employees(Name, xp, TeamType.DESKTOP);
+        this(Name, xp, TeamType.DESKTOP);
     }
 
     Employees(String Name, TeamType TypeOfCharacter)
     {
-        new Employees(Name, 25, TypeOfCharacter);
+        this(Name, 25, TypeOfCharacter);
     }
 
     public int getLevel()
