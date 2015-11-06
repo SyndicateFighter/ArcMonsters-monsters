@@ -1,12 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmployeesTest" tests="6" skipped="0" failures="0" errors="0" timestamp="2015-11-06T19:52:05" hostname="alexn" time="0.004">
+<testsuite name="EmployeesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-06T20:41:07" hostname="alexn" time="0.002">
   <properties/>
-  <testcase name="testGetLevel" classname="EmployeesTest" time="0.002"/>
-  <testcase name="testConstructors" classname="EmployeesTest" time="0.001"/>
-  <testcase name="testGetName" classname="EmployeesTest" time="0.0"/>
-  <testcase name="testGetType" classname="EmployeesTest" time="0.0"/>
-  <testcase name="testAdjustXP" classname="EmployeesTest" time="0.0"/>
-  <testcase name="testGetCurrentXP" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testConstructors" classname="EmployeesTest" time="0.002"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
