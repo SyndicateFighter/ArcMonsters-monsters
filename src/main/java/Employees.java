@@ -26,12 +26,12 @@ public class Employees {
 
     Employees(String Name)
     {
-        this(Name, 25, TeamType.DESKTOP);
+        this(Name, 25, TeamType.SDK);
     }
 
     Employees(String Name, long xp)
     {
-        this(Name, xp, TeamType.DESKTOP);
+        this(Name, xp, TeamType.SDK);
     }
 
     Employees(String Name, TeamType TypeOfCharacter)
@@ -67,5 +67,10 @@ public class Employees {
     public TeamType getType()
     {
         return this.EmpType;
+    }
+
+    public String getName()
+    {
+        return this.name;
     }
 }
