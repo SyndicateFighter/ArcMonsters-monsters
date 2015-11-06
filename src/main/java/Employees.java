@@ -8,6 +8,8 @@ public class Employees {
     public enum TeamType {SDK, DESKTOP, SERVER, IMPLEMENTATION, GEODATA};
     private TeamType EmpType;
     private String name;
+    private long currentHP;
+    private long maxHP;
 
     Employees(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -15,8 +17,10 @@ public class Employees {
         this.EmpType = TypeOfCharacter;
         this.currentXP = 0;
         this.level = 1;
+        this.generateMaxHP();
         this.nextXP = 222;
         this.adjustXP(xp);
+        this.currentHP = this.maxHP;
     }
 
     Employees()
@@ -55,6 +59,7 @@ public class Employees {
         {
             if (this.level < 99) {
                 this.level++;
+                this.generateMaxHP();
             }
             xp -= this.nextXP;
             this.currentXP += this.nextXP;
@@ -74,5 +79,24 @@ public class Employees {
     public String getName()
     {
         return this.name;
+    }
+
+    public long getMaxHP() {
+        return this.maxHP;
+    }
+
+    public long getCurrentHP() {
+        return this.currentHP;
+    }
+
+    private void generateMaxHP() {
+        if (this.level == 1)
+        {
+            this.maxHP = 25;
+        }
+        else {
+            this.maxHP += 2 * this.level;
+            this.currentHP += 2*this.level;
+        }
     }
 }
