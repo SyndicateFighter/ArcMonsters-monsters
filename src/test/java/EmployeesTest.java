@@ -51,10 +51,10 @@ public class EmployeesTest {
         assertEquals(1, emp1.getLevel());
         assertEquals(25, emp1.getCurrentXP());
 
-        Employees emp2 = new Employees("Kwasi",937);
+        Employees emp2 = new Employees("Kwasi",1098903);
         assertEquals("Kwasi", emp2.getName());
-        assertEquals(937, emp2.getCurrentXP());
-        assertEquals(3, emp2.getLevel());
+        assertEquals(1098903, emp2.getCurrentXP());
+        assertEquals(99, emp2.getLevel());
         assertEquals(Employees.TeamType.SDK,emp2.getType());
     }
 }
