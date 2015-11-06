@@ -30,7 +30,7 @@ public class EmployeesTest {
     public void testAdjustXP() throws Exception {
         employee.adjustXP(500);
         assertEquals(525, employee.getCurrentXP());
-        assertEquals(4, employee.getLevel());
+        assertEquals(2, employee.getLevel());
     }
 
     @org.junit.Test
