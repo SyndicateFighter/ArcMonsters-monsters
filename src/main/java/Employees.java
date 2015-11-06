@@ -53,7 +53,9 @@ public class Employees {
     {
         if ((this.currentXP + xp) > this.nextXP)
         {
-            this.level++;
+            if (this.level < 99) {
+                this.level++;
+            }
             xp -= this.nextXP;
             this.currentXP += this.nextXP;
             this.nextXP += 222*this.level;
