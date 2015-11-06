@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="4b311dec-4359-40f8-8b6e-24775a499e0f" name="Default" comment=":+1: adjusted some tests to account for constructors.">
+    <list default="true" id="4b311dec-4359-40f8-8b6e-24775a499e0f" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/cache.properties.lock" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileHashes.bin" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" afterPath="$PROJECT_DIR$/.gradle/2.5/taskArtifacts/fileSnapshots.bin" />
@@ -1028,7 +1028,7 @@
       <workItem from="1446832888373" duration="513000" />
       <workItem from="1446835226650" duration="770000" />
       <workItem from="1446836708468" duration="275000" />
-      <workItem from="1446838289651" duration="2544000" />
+      <workItem from="1446838289651" duration="2556000" />
     </task>
     <task id="LOCAL-00001" summary=":+1: adjusted some tests to account for constructors.">
       <created>1446839608205</created>
@@ -1042,7 +1042,13 @@
       <option name="project" value="LOCAL" />
       <updated>1446839637266</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added a branch">
+      <created>1446842657158</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1446842657158</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1078,7 +1084,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4102000" />
+    <option name="totallyTimeSpent" value="4114000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1066" extended-state="6" />
@@ -1115,7 +1121,8 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value=":+1: adjusted some tests to account for constructors." />
-    <option name="LAST_COMMIT_MESSAGE" value=":+1: adjusted some tests to account for constructors." />
+    <MESSAGE value="Added a branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added a branch" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
