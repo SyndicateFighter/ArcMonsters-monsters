@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="EmployeesTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2015-11-06T20:59:02" hostname="alexn" time="0.002">
+<testsuite name="EmployeesTest" tests="8" skipped="0" failures="0" errors="0" timestamp="2015-11-06T22:43:58" hostname="Alexanders-MacBook-Pro.local" time="0.005">
   <properties/>
-  <testcase name="testConstructors" classname="EmployeesTest" time="0.002"/>
+  <testcase name="testGetLevel" classname="EmployeesTest" time="0.002"/>
+  <testcase name="testGetMaxHP" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testConstructors" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testGetName" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testGetType" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testAdjustXP" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testGetCurrentHP" classname="EmployeesTest" time="0.0"/>
+  <testcase name="testGetCurrentXP" classname="EmployeesTest" time="0.0"/>
   <system-out><![CDATA[]]></system-out>
   <system-err><![CDATA[]]></system-err>
 </testsuite>
