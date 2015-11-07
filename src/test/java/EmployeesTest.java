@@ -73,4 +73,27 @@ public class EmployeesTest {
         assertEquals(9923, emp2.getMaxHP());  //Checked this manually
         assertEquals(9923, emp2.getCurrentHP()); //Checked this manually
     }
+
+    @org.junit.Test
+    public void testGetAliveStatus() throws Exception
+    {
+        assertEquals(true, employee.getAliveStatus());
+    }
+
+    @org.junit.Test
+    public void testAdjustHPNegative() throws Exception
+    {
+        employee.adjustHP(-55);
+        assertEquals(false, employee.getAliveStatus());
+        assertEquals(0, employee.getCurrentHP());
+    }
+
+    @org.junit.Test
+    public void testAdjustHPPositive() throws Exception
+    {
+        employee.adjustHP(-10);
+        employee.adjustHP(55);
+        assertEquals(true, employee.getAliveStatus());
+        assertEquals(25, employee.getCurrentHP());
+    }
 }

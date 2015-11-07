@@ -10,6 +10,7 @@ public class Employees {
     private String name;
     private long currentHP;
     private long maxHP;
+    private boolean alive;
 
     Employees(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -21,6 +22,7 @@ public class Employees {
         this.nextXP = 222;
         this.adjustXP(xp);
         this.currentHP = this.maxHP;
+        this.alive = true;
     }
 
     Employees()
@@ -97,6 +99,38 @@ public class Employees {
         else {
             this.maxHP += 2 * this.level;
             this.currentHP += 2*this.level;
+        }
+    }
+
+    public boolean getAliveStatus()
+    {
+        return this.alive;
+    }
+
+    public void adjustHP(int changeInHP)
+    {
+        if(changeInHP<0)
+        {
+            if ((-changeInHP) >= this.currentHP)
+            {
+                this.alive = false;
+                this.currentHP = 0;
+            }
+            else
+            {
+                this.currentHP += changeInHP;
+            }
+        }
+        else
+        {
+            if (changeInHP >= (this.maxHP - this.currentHP))
+            {
+                this.currentHP = this.maxHP;
+            }
+            else
+            {
+                this.currentHP += changeInHP;
+            }
         }
     }
 }
