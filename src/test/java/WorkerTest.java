@@ -37,7 +37,7 @@ public class WorkerTest {
 
     @org.junit.Test
     public void testGetType() throws Exception {
-        assertEquals(Worker.TeamType.SDK, worker.getType());
+        assertEquals(Worker.TeamType.DEV, worker.getType());
     }
 
     @org.junit.Test
@@ -59,7 +59,7 @@ public class WorkerTest {
     public void testConstructors() throws Exception {
         Worker worker1 = new Worker("Kwasi");
         assertEquals("Kwasi", worker1.getName());
-        assertEquals(Worker.TeamType.SDK,worker1.getType());
+        assertEquals(Worker.TeamType.DEV,worker1.getType());
         assertEquals(1, worker1.getLevel());
         assertEquals(25, worker1.getCurrentXP());
         assertEquals(25, worker1.getMaxHP());
@@ -69,7 +69,7 @@ public class WorkerTest {
         assertEquals("Kwasi", worker2.getName());
         assertEquals(1098903, worker2.getCurrentXP()); //Checked that this should give us level 100 but enforced a level cap.
         assertEquals(99, worker2.getLevel());
-        assertEquals(Worker.TeamType.SDK,worker2.getType());
+        assertEquals(Worker.TeamType.DEV,worker2.getType());
         assertEquals(9923, worker2.getMaxHP());  //Checked this manually
         assertEquals(9923, worker2.getCurrentHP()); //Checked this manually
     }
