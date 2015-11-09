@@ -1,7 +1,7 @@
 /**
  * Created by alex7370 on 11/5/2015.
  */
-public class Employees {
+public class Worker {
     private int level;
     private long currentXP;
     private long nextXP;
@@ -12,7 +12,7 @@ public class Employees {
     private long maxHP;
     private boolean alive;
 
-    Employees(String Name, long xp, TeamType TypeOfCharacter)
+    Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
         this.name = Name;
         this.EmpType = TypeOfCharacter;
@@ -25,22 +25,22 @@ public class Employees {
         this.alive = true;
     }
 
-    Employees()
+    Worker()
     {
         this("David", 25, TeamType.SDK);
     }
 
-    Employees(String Name)
+    Worker(String Name)
     {
         this(Name, 25, TeamType.SDK);
     }
 
-    Employees(String Name, long xp)
+    Worker(String Name, long xp)
     {
         this(Name, xp, TeamType.SDK);
     }
 
-    Employees(String Name, TeamType TypeOfCharacter)
+    Worker(String Name, TeamType TypeOfCharacter)
     {
         this(Name, 25, TypeOfCharacter);
     }
