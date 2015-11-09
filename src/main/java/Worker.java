@@ -5,7 +5,7 @@ public class Worker {
     private int level;
     private long currentXP;
     private long nextXP;
-    public enum TeamType {SDK, DESKTOP, SERVER, IMPLEMENTATION, GEODATA};
+    public enum TeamType {DEV, HR, MANAGEMENT, FINANCIAL, DATAENTRY, ANALYST, IT};
     private TeamType EmpType;
     private String name;
     private long currentHP;
@@ -27,17 +27,17 @@ public class Worker {
 
     Worker()
     {
-        this("David", 25, TeamType.SDK);
+        this("David", 25, TeamType.DEV);
     }
 
     Worker(String Name)
     {
-        this(Name, 25, TeamType.SDK);
+        this(Name, 25, TeamType.DEV);
     }
 
     Worker(String Name, long xp)
     {
-        this(Name, xp, TeamType.SDK);
+        this(Name, xp, TeamType.DEV);
     }
 
     Worker(String Name, TeamType TypeOfCharacter)
