@@ -8,6 +8,22 @@ abstract public class Skills {
     private int cooldown;
     private int costNRG;
 
+    public Skills(String Name, int MaxNRG, int Cooldown, int CostPerAttach)
+    {
+        this.name = Name;
+        this.maxNRG = MaxNRG;
+        this.currentNRG = MaxNRG;
+        this.cooldown = Cooldown;
+        this.costNRG = CostPerAttach;
+
+        // When writing subclasses, use the following format of constructor
+        // class SubClass extends Skills
+        // {
+        //    public SubClass(String Name, int MaxNRG, int Cooldown, int CostPerAttach)
+        //     {   super(String Name, int MaxNRG, int Cooldown, int CostPerAttach);   }
+        // }
+    }
+
     abstract public void Action(Worker attackingWorker, Worker defendingWorker);
 
     final public String getName()

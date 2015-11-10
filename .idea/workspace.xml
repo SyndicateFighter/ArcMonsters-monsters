@@ -57,12 +57,9 @@
       <file leaf-file-name="Skills.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.44316998">
-              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-              <folding>
-                <element signature="e#555#556#0" expanded="true" />
-                <element signature="e#591#592#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.31908238">
+              <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -415,6 +412,7 @@
     </navigator>
     <panes>
       <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -515,7 +513,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
     </panes>
   </component>
@@ -1060,6 +1057,7 @@
       <workItem from="1447100792015" duration="115000" />
       <workItem from="1447103205447" duration="316000" />
       <workItem from="1447165025751" duration="111000" />
+      <workItem from="1447169406699" duration="298000" />
     </task>
     <task id="LOCAL-00001" summary=":+1: adjusted some tests to account for constructors.">
       <created>1446839608205</created>
@@ -1127,11 +1125,11 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8342000" />
+    <option name="totallyTimeSpent" value="8640000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1204,10 +1202,50 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WorkerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
           <folding>
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
+            <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustXP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetType#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetName#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetCurrentHP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetMaxHP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testConstructors#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+          <folding>
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
+            <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1639,12 +1677,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.44316998">
-          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
-          <folding>
-            <element signature="e#555#556#0" expanded="true" />
-            <element signature="e#591#592#0" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.31908238">
+          <caret line="18" column="60" selection-start-line="18" selection-start-column="60" selection-end-line="18" selection-end-column="60" />
+          <folding />
         </state>
       </provider>
     </entry>
