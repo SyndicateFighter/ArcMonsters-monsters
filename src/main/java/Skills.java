@@ -6,6 +6,7 @@ abstract public class Skills {
     private int currentNRG;
     private int maxNRG;
     private int cooldown;
+    private int costNRG;
 
     abstract public void Action(Worker attackingWorker, Worker defendingWorker);
 
@@ -28,4 +29,11 @@ abstract public class Skills {
     {
         return this.cooldown;
     }
+
+    final public int adjustNRG()
+    {
+        //DO SOMETHING
+        return this.currentNRG;
+    }
+
 }

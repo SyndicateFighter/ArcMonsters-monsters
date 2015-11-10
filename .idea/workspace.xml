@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="4b311dec-4359-40f8-8b6e-24775a499e0f" name="Default" comment="Level cap of 99.  Test fails when putting in enough XP for level 100.  XP cap of 1098900 is when level 100 occurs.  Need to implement.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/Skills.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Skills.java" afterPath="$PROJECT_DIR$/src/main/java/Skills.java" />
     </list>
     <ignored path="arcmon.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -58,17 +57,11 @@
       <file leaf-file-name="Skills.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.5140772">
-              <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+            <state vertical-scroll-proportion="0.44316998">
+              <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
               <folding>
-                <element signature="e#300#301#0" expanded="true" />
-                <element signature="e#332#333#0" expanded="true" />
-                <element signature="e#376#377#0" expanded="true" />
-                <element signature="e#414#415#0" expanded="true" />
-                <element signature="e#454#455#0" expanded="true" />
-                <element signature="e#488#489#0" expanded="true" />
-                <element signature="e#530#531#0" expanded="true" />
-                <element signature="e#566#567#0" expanded="true" />
+                <element signature="e#555#556#0" expanded="true" />
+                <element signature="e#591#592#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -421,8 +414,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -524,6 +515,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1066,6 +1059,7 @@
       <workItem from="1447100681587" duration="60000" />
       <workItem from="1447100792015" duration="115000" />
       <workItem from="1447103205447" duration="316000" />
+      <workItem from="1447165025751" duration="111000" />
     </task>
     <task id="LOCAL-00001" summary=":+1: adjusted some tests to account for constructors.">
       <created>1446839608205</created>
@@ -1133,7 +1127,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8231000" />
+    <option name="totallyTimeSpent" value="8342000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="1912" y="-8" width="1936" height="1096" extended-state="6" />
@@ -1193,6 +1187,52 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="7" column="80" selection-start-line="7" selection-start-column="80" selection-end-line="7" selection-end-column="80" />
+          <folding>
+            <element signature="method#Worker#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustXP#0;class#Worker#0" expanded="false" />
+            <element signature="method#generateMaxHP#0;class#Worker#0" expanded="false" />
+            <element signature="method#adjustHP#0;class#Worker#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/WorkerTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="58" column="0" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding>
+            <element signature="docComment;class#WorkerTest#0" expanded="false" />
+            <element signature="method#setUp#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetLevel#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetCurrentXP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustXP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetType#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetName#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetCurrentHP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetMaxHP#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testConstructors#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testGetAliveStatus#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustHPNegative#0;class#WorkerTest#0" expanded="false" />
+            <element signature="method#testAdjustHPPositive#0;class#WorkerTest#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Worker.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -1599,17 +1639,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/Skills.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.5140772">
-          <caret line="29" column="5" selection-start-line="29" selection-start-column="5" selection-end-line="29" selection-end-column="5" />
+        <state vertical-scroll-proportion="0.44316998">
+          <caret line="34" column="22" selection-start-line="34" selection-start-column="22" selection-end-line="34" selection-end-column="22" />
           <folding>
-            <element signature="e#300#301#0" expanded="true" />
-            <element signature="e#332#333#0" expanded="true" />
-            <element signature="e#376#377#0" expanded="true" />
-            <element signature="e#414#415#0" expanded="true" />
-            <element signature="e#454#455#0" expanded="true" />
-            <element signature="e#488#489#0" expanded="true" />
-            <element signature="e#530#531#0" expanded="true" />
-            <element signature="e#566#567#0" expanded="true" />
+            <element signature="e#555#556#0" expanded="true" />
+            <element signature="e#591#592#0" expanded="true" />
           </folding>
         </state>
       </provider>
