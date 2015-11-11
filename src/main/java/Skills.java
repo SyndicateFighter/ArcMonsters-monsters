@@ -2,11 +2,11 @@
  * Created by alex7370 on 11/9/2015.
  */
 abstract public class Skills {
-    private String name;
-    private int currentNRG;
-    private int maxNRG;
-    private int cooldown;
-    private int costNRG;
+    protected String name;
+    protected int currentNRG;
+    protected int maxNRG;
+    protected int cooldown;
+    protected int costNRG;
 
     public Skills(String Name, int MaxNRG, int Cooldown, int CostPerAttach)
     {
@@ -46,10 +46,41 @@ abstract public class Skills {
         return this.cooldown;
     }
 
-    final public int adjustNRG()
+    final public void adjustNRG(int amountToAdjust)
     {
-        //DO SOMETHING
-        return this.currentNRG;
+        if (amountToAdjust < 0)
+        {
+            if (-(amountToAdjust) > this.currentNRG)
+            {
+                //throw custom exception
+            }
+            else
+            {
+                this.currentNRG += amountToAdjust;
+            }
+        }
+        else
+        {
+            if (amountToAdjust > (this.maxNRG - this.currentNRG))
+            {
+                this.currentNRG = this.maxNRG;
+            }
+            else
+            {
+                this.currentNRG += amountToAdjust;
+            }
+        }
+    }
+
+    final public void adjustNRG()
+    {
+        if(this.currentNRG == 0 || this.currentNRG < this.costNRG)
+        {
+            //throw custom exception about lacking enough NRG
+        }
+        else {
+            this.currentNRG -= this.costNRG;
+        }
     }
 
 }
