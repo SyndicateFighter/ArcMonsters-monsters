@@ -1,3 +1,4 @@
+import java.util.ArrayList;
 import java.util.List;
 
 /**
@@ -13,7 +14,7 @@ public class Worker {
     private long currentHP;
     private long maxHP;
     private boolean alive;
-    private List<Skills> skillsList;
+    private List<Skills> skillsList = new ArrayList<Skills>();
 
     Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -139,7 +140,7 @@ public class Worker {
 
     public void addSkill(Skills skill)
     {
-        skillsList.add(-1, skill);
+        skillsList.add(skill);
     }
 
     public void removeSkill(int skillIndex)
@@ -147,8 +148,13 @@ public class Worker {
         skillsList.remove(skillIndex);
     }
 
-    public void getSkill(int skillIndex)
+    public Skills getSkill(int skillIndex)
     {
-        skillsList.get(skillIndex);
+        return skillsList.get(skillIndex);
+    }
+
+    public int getSkillCount()
+    {
+        return skillsList.size();
     }
 }
