@@ -10,7 +10,7 @@ public class WorkerTest {
     @org.junit.Before
     public void setUp() throws Exception {
         worker = new Worker();
-        litigation = new LitigateSkill("Litigation", 25, 0, 1);
+        litigation = new LitigateSkill();
     }
 
     @org.junit.After

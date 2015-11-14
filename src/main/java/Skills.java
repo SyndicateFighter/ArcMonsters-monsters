@@ -8,11 +8,11 @@ abstract public class Skills {
     protected int cooldown;
     protected int costNRG;
 
-    public Skills(String Name, int MaxNRG, int Cooldown, int CostPerAttach)
+    public Skills(String Name, int MaxNRG, int Cooldown, int CostPerAttach, int CurrentNRG)
     {
         this.name = Name;
         this.maxNRG = MaxNRG;
-        this.currentNRG = MaxNRG;
+        this.currentNRG = CurrentNRG;
         this.cooldown = Cooldown;
         this.costNRG = CostPerAttach;
 

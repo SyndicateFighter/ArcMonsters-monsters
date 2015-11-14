@@ -8,7 +8,7 @@ import static org.junit.Assert.*;
  * Created by alexandernohe on 11/10/15.
  */
 public class LitigateSkillTest {
-    LitigateSkill litigation = new LitigateSkill("Litigation", 25, 0, 1);
+    LitigateSkill litigation = new LitigateSkill();
     Worker myEmployee;
     Worker enemyEmployee;
 

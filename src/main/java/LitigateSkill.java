@@ -3,9 +3,19 @@
  */
 public class LitigateSkill extends Skills {
 
-    public LitigateSkill(String Name, int MaxNRG, int Cooldown, int CostPerAttach)
+    public LitigateSkill(String Name, int MaxNRG, int Cooldown, int CostPerAttach, int CurrentNRG)
     {
-        super(Name, MaxNRG, Cooldown, CostPerAttach);
+        super(Name, MaxNRG, Cooldown, CostPerAttach, CurrentNRG);
+    }
+
+    public LitigateSkill()
+    {
+        super("Litigation", 25, 0, 1, 25);
+    }
+
+    public LitigateSkill(int CurrentNRG)
+    {
+        super("Litigation", CurrentNRG, 0, 1, 25);
     }
 
     @Override
