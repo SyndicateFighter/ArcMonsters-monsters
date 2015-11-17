@@ -1,3 +1,6 @@
+import java.util.ArrayList;
+import java.util.List;
+
 /**
  * Created by alex7370 on 11/5/2015.
  */
@@ -5,12 +8,13 @@ public class Worker {
     private int level;
     private long currentXP;
     private long nextXP;
-    public enum TeamType {DEV, HR, MANAGEMENT, FINANCIAL, DATAENTRY, ANALYST, IT};
+    public enum TeamType {DEV, HR, MANAGEMENT, FINANCIAL, DATAENTRY, ANALYST, IT, LEGAL};
     private TeamType EmpType;
     private String name;
     private long currentHP;
     private long maxHP;
     private boolean alive;
+    private List<Skills> skillsList = new ArrayList<Skills>();
 
     Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -132,5 +136,25 @@ public class Worker {
                 this.currentHP += changeInHP;
             }
         }
+    }
+
+    public void addSkill(Skills skill)
+    {
+        skillsList.add(skill);
+    }
+
+    public void removeSkill(int skillIndex)
+    {
+        skillsList.remove(skillIndex);
+    }
+
+    public Skills getSkill(int skillIndex)
+    {
+        return skillsList.get(skillIndex);
+    }
+
+    public int getSkillCount()
+    {
+        return skillsList.size();
     }
 }
