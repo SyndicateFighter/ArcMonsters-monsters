@@ -1,3 +1,7 @@
+package com.alexander.syndicatefighter;
+
+import com.alexander.syndicatefighter.LitigateSkill;
+import com.alexander.syndicatefighter.Worker;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.Test;

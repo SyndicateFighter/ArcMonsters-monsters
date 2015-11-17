@@ -1,3 +1,7 @@
+package com.alexander.syndicatefighter;
+
+import com.alexander.syndicatefighter.Skills;
+
 import java.util.ArrayList;
 import java.util.List;
 

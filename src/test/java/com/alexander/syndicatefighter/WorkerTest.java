@@ -1,3 +1,9 @@
+package com.alexander.syndicatefighter;
+
+import com.alexander.syndicatefighter.LitigateSkill;
+import com.alexander.syndicatefighter.Skills;
+import com.alexander.syndicatefighter.Worker;
+
 import static org.junit.Assert.*;
 
 /**
