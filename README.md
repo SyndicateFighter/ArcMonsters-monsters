@@ -1,4 +1,6 @@
 # ArcMonsters-monsters
 The monsters and its test class
 
-[![Build Status](https://travis-ci.org/NotTheTeamYouAreLookingFor/ArcMonsters-monsters.svg?branch=master)](https://travis-ci.org/NotTheTeamYouAreLookingFor/ArcMonsters-monsters)
+[![Build Status](https://travis-ci.org/SyndicateFighter/ArcMonsters-monsters.svg)](https://travis-ci.org/SyndicateFighter/ArcMonsters-monsters)
+
+[![Jit Pack](https://img.shields.io/github/release/SyndicateFighter/ArcMonsters-monsters.svg?label=JitPack)](https://jitpack.io/#SyndicateFighter/ArcMonsters-monsters)
