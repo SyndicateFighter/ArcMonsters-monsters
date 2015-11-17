@@ -17,7 +17,7 @@ before_install:
 
  
 before_script:
- - pip install codecov
+ - sudo pip install codecov
  
 after_success:
  - codecov
