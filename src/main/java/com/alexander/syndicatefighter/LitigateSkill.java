@@ -1,3 +1,7 @@
+package com.alexander.syndicatefighter;
+
+import com.alexander.syndicatefighter.Skills;
+
 /**
  * Created by alexandernohe on 11/10/15.
  */

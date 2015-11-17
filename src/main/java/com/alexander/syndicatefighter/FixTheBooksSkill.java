@@ -1,7 +1,9 @@
+package com.alexander.syndicatefighter;
+
 /**
  * Created by alexandernohe on 11/14/15.
  */
-public class FixTheBooksSkill extends Skills{
+public class FixTheBooksSkill extends Skills {
 
     public FixTheBooksSkill(String Name, int MaxNRG, int Cooldown, int CostPerAttach, int CurrentNRG)
     {
