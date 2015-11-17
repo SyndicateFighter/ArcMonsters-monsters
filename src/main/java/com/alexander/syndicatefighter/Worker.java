@@ -20,7 +20,7 @@ public class Worker {
     private boolean alive;
     private List<Skills> skillsList = new ArrayList<Skills>();
 
-    Worker(String Name, long xp, TeamType TypeOfCharacter)
+    public Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
         this.name = Name;
         this.EmpType = TypeOfCharacter;
@@ -33,22 +33,22 @@ public class Worker {
         this.alive = true;
     }
 
-    Worker()
+    public Worker()
     {
         this("David", 25, TeamType.DEV);
     }
 
-    Worker(String Name)
+    public Worker(String Name)
     {
         this(Name, 25, TeamType.DEV);
     }
 
-    Worker(String Name, long xp)
+    public Worker(String Name, long xp)
     {
         this(Name, xp, TeamType.DEV);
     }
 
-    Worker(String Name, TeamType TypeOfCharacter)
+    public Worker(String Name, TeamType TypeOfCharacter)
     {
         this(Name, 25, TypeOfCharacter);
     }
