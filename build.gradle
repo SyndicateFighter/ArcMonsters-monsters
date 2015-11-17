@@ -2,6 +2,9 @@ group 'com.esri.arcmon'
 version '1.0'
 
 apply plugin: 'java'
+apply plugin: 'maven'
+
+group = 'com.github.SyndicateFighter'
 
 sourceCompatibility = 1.5
 
