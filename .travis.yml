@@ -14,3 +14,7 @@ branches:
     
 before_install:
  - chmod +x gradlew
+ - pip install codecov
+ 
+after_success:
+ - codecov
