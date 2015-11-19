@@ -30,7 +30,7 @@ public class Backpack {
     }*/
 
     public Item listItem(Item item) throws Exception {
-            return List<>;
+
             //return this.items, this.count to peek in the backpack
     }
 
