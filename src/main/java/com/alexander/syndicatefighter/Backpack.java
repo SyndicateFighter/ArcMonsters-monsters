@@ -1,6 +1,5 @@
 package com.alexander.syndicatefighter;
 
-import java.net.Inet4Address;
 import java.util.*;
 
 /**
