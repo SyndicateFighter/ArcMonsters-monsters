@@ -1,7 +1,5 @@
 package com.alexander.syndicatefighter.Player;
 
-import android.media.Image;
-
 import com.alexander.syndicatefighter.Backpack;
 import com.alexander.syndicatefighter.Worker;
 
