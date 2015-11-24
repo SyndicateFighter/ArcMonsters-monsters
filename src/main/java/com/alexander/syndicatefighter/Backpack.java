@@ -31,14 +31,9 @@ public class Backpack {
         items.remove(item);
     }
 
-    public List<String> listItem(Item item) throws Exception {
+    public Map<Item, Integer> listItems() throws Exception {
 
-        List<String> allItems = new ArrayList<String>();
-
-        for (Map.Entry<Item, Integer> entry : this.items.entrySet()) {
-            allItems.add("Item: " + entry.getKey().getName() + ", Count: " + entry.getValue().toString());
-        }
-        return allItems;
+        return this.items;
     }
 
     //Methods to implement later: storeToJSON() : void
