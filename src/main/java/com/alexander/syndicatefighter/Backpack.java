@@ -31,7 +31,7 @@ public class Backpack {
         items.remove(item);
     }
 
-    public Map<Item, Integer> listItems() throws Exception {
+    public Map<Item, Integer> getItems() throws Exception {
 
         return this.items;
     }
