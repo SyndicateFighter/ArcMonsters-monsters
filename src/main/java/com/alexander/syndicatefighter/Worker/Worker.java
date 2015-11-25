@@ -18,6 +18,7 @@ public class Worker {
     private long maxHP;
     private boolean alive;
     private List<Skills> skillsList = new ArrayList<Skills>();
+    private double percentOfHealthRemaining;
 
     public Worker(String Name, long xp, TeamType TypeOfCharacter)
     {
@@ -30,6 +31,7 @@ public class Worker {
         this.adjustXP(xp);
         this.currentHP = this.maxHP;
         this.alive = true;
+        this.percentOfHealthRemaining = 1;
     }
 
     public Worker()
@@ -117,17 +119,13 @@ public class Worker {
     public void adjustHP(int changeInHP)
     {
         if(changeInHP<0)
-        {
-            if ((-changeInHP) >= this.currentHP)
-            {
+            if ((-changeInHP) >= this.currentHP) {
                 this.alive = false;
                 this.currentHP = 0;
-            }
-            else
-            {
+            } else {
                 this.currentHP += changeInHP;
+                this.percentOfHealthRemaining = (double)((double)(this.currentHP) / (double)(this.maxHP));
             }
-        }
         else
         {
             if (changeInHP >= (this.maxHP - this.currentHP))
@@ -159,5 +157,9 @@ public class Worker {
     public int getSkillCount()
     {
         return skillsList.size();
+    }
+
+    public double getPercentOfHealthRemaining() {
+        return this.percentOfHealthRemaining;
     }
 }

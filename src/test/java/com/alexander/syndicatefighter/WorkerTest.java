@@ -134,4 +134,12 @@ public class WorkerTest {
         worker.addSkill(litigation);
         assertEquals(1, worker.getSkillCount());
     }
+
+    @org.junit.Test
+    public void testGetPercentageOfHealthRemaining() throws Exception
+    {
+        worker.adjustHP(-5);
+        assertEquals(20, worker.getCurrentHP());
+        assertEquals(.8, worker.getPercentOfHealthRemaining(), .2);
+    }
 }

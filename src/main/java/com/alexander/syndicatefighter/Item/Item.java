@@ -4,11 +4,16 @@ package com.alexander.syndicatefighter.Item;
  * Created by mohi7253 on 11/18/2015.
  */
 public abstract class Item {
-    public String itemName;
+    private String itemName;
 
-    abstract public void Action();
+    private int itemID;
 
-    public String getName() throws Exception {
+    public String getName() {
         return this.itemName;
+    }
+
+    public int getItemID()
+    {
+        return this.itemID;
     }
 }
