@@ -1,5 +1,7 @@
 package com.alexander.syndicatefighter;
 
+import com.alexander.syndicatefighter.Item.Item;
+
 import java.util.*;
 
 /**

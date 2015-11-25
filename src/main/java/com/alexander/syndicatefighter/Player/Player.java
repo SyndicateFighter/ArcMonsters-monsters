@@ -1,7 +1,7 @@
 package com.alexander.syndicatefighter.Player;
 
 import com.alexander.syndicatefighter.Backpack;
-import com.alexander.syndicatefighter.Worker;
+import com.alexander.syndicatefighter.Worker.Worker;
 
 import java.util.ArrayList;
 import java.util.List;
