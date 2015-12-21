@@ -13,12 +13,13 @@ import static org.junit.Assert.*;
  * Created by alexandernohe on 11/10/15.
  */
 public class LitigateSkillTest {
-    LitigateSkill litigation = new LitigateSkill();
+    LitigateSkill litigation;
     Worker myEmployee;
     Worker enemyEmployee;
 
     @Before
     public void setUp() throws Exception {
+        litigation = new LitigateSkill();
         myEmployee = new Worker("Monster", 256, TeamType.LEGAL);
         enemyEmployee = new Worker("GIANT", 25, TeamType.FINANCIAL);
     }
