@@ -8,6 +8,7 @@ import com.alexander.syndicatefighter.Worker.Worker;
 import junit.framework.TestCase;
 import org.junit.After;
 import org.junit.Before;
+import org.junit.Test;
 
 import java.lang.management.PlatformLoggingMXBean;
 import java.util.ArrayList;
@@ -28,85 +29,104 @@ public class PlayerTest extends TestCase {
 
     }
 
+    @Test
     public void testGetId() throws Exception {
 
         assertEquals(123, player1.getId());
     }
 
+    @Test
     public void testSetId() throws Exception {
         player1.setId(345);
         assertEquals(345, player1.getId());
     }
 
+    @Test
     public void testGetEmail() throws Exception {
         assertEquals("player@test.com", player1.getEmail());
     }
 
+    @Test
     public void testSetEmail() throws Exception {
         player1.setEmail("SyndiFighterWin@esri.com");
         assertEquals("SyndiFighterWin@esri.com", player1.getEmail());
     }
 
+    @Test
     public void testGetName() throws Exception {
         assertEquals("Newplayer Changeyourname", player1.getName());
     }
 
+    @Test
     public void testSetName() throws Exception {
         player1.setName("Boom Shakalaka");
         assertEquals("Boom Shakalaka", player1.getName());
     }
 
+    @Test
     public void testGetGender() throws Exception {
         assertEquals(Gender.Neither, player1.getGender());
     }
 
+    @Test
     public void testSetGender() throws Exception {
         player1.setGender(Gender.GenderFluid);
         assertEquals(Gender.GenderFluid, player1.getGender());
     }
 
+    @Test
     public void testGetCash() throws Exception {
         assertEquals(0, player1.getCash());
     }
 
+    @Test
     public void testSetCash() throws Exception {
         player1.setCash(-100);
         assertEquals(0, player1.getCash());
     }
 
+    @Test
     public void testIncreaseCash() throws Exception {
         player1.increaseCash(555555555);
         assertEquals(555555555, player1.getCash());
     }
 
+    @Test
     public void testDecreaseCash() throws Exception {
         player1.decreaseCash(666666666);
         assertEquals(0, player1.getCash());
     }
 
+    @Test
     public void testGetStatus() throws Exception {
         assertEquals(Status.New, player1.getStatus());
     }
 
+    @Test
     public void testSetStatus() throws Exception {
         player1.setStatus(Status.Normal);
         assertEquals(Status.Normal, player1.getStatus());
     }
 
+    @Test
     public void testGetAvatar() throws Exception {
         assertEquals("DefaultAvatar", player1.getAvatar());
     }
 
+    @Test
     public void testSetAvatar() throws Exception {
 
     }
 
+    @Test
     public void testGetBackpack() throws Exception {
 
     }
 
+
     //Things changed here and we will need to update this
         /*
+    @Test
     public void testSetBackpack() throws Exception {
 
         Backpack newBP = new Backpack();
@@ -124,10 +144,12 @@ public class PlayerTest extends TestCase {
     }
     */
 
+    @Test
     public void testGetWorkerList() throws Exception {
 
     }
 
+    @Test
     public void testSetWorkerList() throws Exception {
         //please change this into true when really testing, otherwise....Let's have some fun!!
         boolean reallyTesting = true;
@@ -155,6 +177,7 @@ public class PlayerTest extends TestCase {
         }
     }
 
+    @Test
     public void testToJSON() throws Exception {
         System.out.println("Json string of defaul player is: \n" + player1.toJSON());
 
@@ -172,16 +195,19 @@ public class PlayerTest extends TestCase {
         }*/
     }
 
+    @Test
     public void testActivate() throws Exception {
         player1.activate();
         assertEquals(Status.Normal, player1.getStatus());
     }
 
+    @Test
     public void testDeactivate() throws Exception {
         player1.deactivate();
         assertEquals(Status.InActive, player1.getStatus());
     }
 
+    @Test
     public void testCanBattle() throws Exception {
         assertEquals(false, player1.canBattle());
         player1.deactivate();
