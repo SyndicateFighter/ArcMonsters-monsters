@@ -25,12 +25,28 @@ public class Backpack {
     }
 
     public void addItem(Item item) throws Exception {
-        int countOfItem = items.get(item);
-        items.put(item, countOfItem + 1);
+        if (items.containsKey(item)) {
+            int countOfItem = items.get(item);
+            if (countOfItem == 0) {
+                items.put(item, 1);
+            } else {
+                items.put(item, countOfItem + 1);
+            }
+        }
+        else {
+            items.put(item, 1);
+        }
+
     }
 
     public void recycleItem(Item item) throws Exception {
-        items.remove(item);
+        //This will be more meaningful later.
+        int countOfItem = items.get(item);
+        if (countOfItem == 1) {
+            items.remove(item);
+        } else {
+            items.put(item, (countOfItem -1));
+        }
     }
 
     public Map<Item, Integer> getItems() throws Exception {
