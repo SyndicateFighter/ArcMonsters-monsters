@@ -27,7 +27,7 @@ public class WorkerTest {
 
     @org.junit.Test
     public void testGetLevel() throws Exception {
-        assertEquals(1, worker.getLevel());
+        assertEquals(2, worker.getLevel());
     }
 
     @org.junit.Test
